@@ -10,4 +10,4 @@ WORKDIR /project1
 
 COPY ./project1 /project1/
 
-CMD ["python", "main.py"]
+CMD ["python", "project1/main.py"]
