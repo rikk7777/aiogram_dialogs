@@ -1,7 +1,13 @@
 FROM python:3.11.1
-ENV PYTHONUNBUFFERED 1
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache -r /app/requirements.txt
-COPY . /app/
-CMD ["python", "my_dialog.py"]
+
+ENV PYTHONUNBUFFERED=1
+
+COPY ./requirements.txt /requirements.txt
+
+RUN pip install -r /requirements.txt
+
+WORKDIR /bot
+
+COPY ./bot /bot/
+
+CMD ['python', '/bot/main.py']
