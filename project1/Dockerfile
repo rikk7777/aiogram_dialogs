@@ -10,4 +10,4 @@ WORKDIR /bot
 
 COPY ./bot /bot/
 
-CMD ["python", "bot/main.py"]
+CMD ["python", "/bot/main.py"]
