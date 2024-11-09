@@ -6,8 +6,8 @@ COPY ./requirements.txt /requirements.txt
 
 RUN pip install -r /requirements.txt
 
-WORKDIR /bot
+WORKDIR /my_aiogram_dialogs
 
-COPY ./bot /bot/
+COPY ./my_aiogram_dialogs /my_aiogram_dialogs/
 
-CMD ['python', '/bot/main.py']
+CMD ['python', '/my_aiogram_dialogs/dialog.py']
