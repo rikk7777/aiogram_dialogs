@@ -6,8 +6,8 @@ COPY ./requirements.txt /requirements.txt
 
 RUN pip install -r /requirements.txt
 
-WORKDIR /project1
+WORKDIR /bot
 
-COPY /project1 /project1/
+COPY ./bot /bot/
 
-CMD ["python", "main.py"]
+CMD ["python", "bot/main.py"]
