@@ -8,6 +8,6 @@ RUN pip install -r /requirements.txt
 
 WORKDIR /project1
 
-COPY ./project1 /project1/
+COPY /my_aiogram_dialogs /project1/
 
 CMD ["python", "project1/main.py"]
