@@ -1,0 +1,10 @@
+services:
+  main_bot:
+    build:
+      context: .
+    environment:
+      - BOT_TOKEN=7775638695:AAHq1R8fUilgXdiHHC5DenGW67EoZb_jq-4
+    restart: on-failure
+    volumes: 
+      - ./bot:/bot
+      
