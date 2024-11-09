@@ -1,4 +1,3 @@
-version: "3.8"
 services:
     bot:
         image: "my_aiogram_dialogs"
